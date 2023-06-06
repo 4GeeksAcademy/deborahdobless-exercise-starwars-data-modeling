@@ -29,13 +29,13 @@ class Characters(Base):
     id = Column(Integer, primary_key=True)
     gender = Column(String(250), nullable=False)
     haircolor = Column(String(250), nullable=False)
-    age = Column(String(250), nullable=False)
+    age = Column(Integer, nullable=False)
     favorites = relationship(Favorites)
 
 class Planets(Base):
     __tablename__ = 'planets'
     id = Column(Integer, primary_key=True)
-    terrain = Column(String(250), nullable=False)
+    terrain = Column(Integer, nullable=False)
     climate = Column(String(250), nullable=False)
     size = Column(Integer, nullable=False)
     favorites = relationship(Favorites)
