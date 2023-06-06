@@ -27,7 +27,6 @@ class Favorites(Base):
 class Characters(Base):
     __tablename__ = 'characters'
     id = Column(Integer, primary_key=True)
-    name_character = Column(String(250), nullable=False)
     gender = Column(String(250), nullable=False)
     haircolor = Column(String(250), nullable=False)
     age = Column(String(250), nullable=False)
@@ -36,7 +35,6 @@ class Characters(Base):
 class Planets(Base):
     __tablename__ = 'planets'
     id = Column(Integer, primary_key=True)
-    name_planet = Column(String(250), nullable=False)
     terrain = Column(String(250), nullable=False)
     climate = Column(String(250), nullable=False)
     size = Column(Integer, nullable=False)
