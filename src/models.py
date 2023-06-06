@@ -29,7 +29,7 @@ class Characters(Base):
     id = Column(Integer, primary_key=True)
     name_character = Column(String(250), nullable=False)
     gender = Column(String(250), nullable=False)
-    character_name = Column(String(250), nullable=False)
+    haircolor = Column(String(250), nullable=False)
     age = Column(String(250), nullable=False)
     favorites = relationship(Favorites)
 
